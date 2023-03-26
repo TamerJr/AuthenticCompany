@@ -15,9 +15,10 @@ import {
 import "./App.css";
 import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
 import userContext from "./Contexts/AuthContext";
+import ProtectLogIn from "./Components/ProtectLogIn/ProtectLogIn";
 
 function App() {
-const {user}=useContext(userContext)
+  const { user } = useContext(userContext);
   return (
     <div className="App">
       <Navbar />
@@ -40,12 +41,19 @@ const {user}=useContext(userContext)
             </ProtectedRoute>
           }
         />
-        <Route path="login" element={<LogIn />} />
+        <Route
+          path="login"
+          element={
+            <ProtectLogIn>
+              <LogIn />
+            </ProtectLogIn>
+          }
+        />
         <Route path="signup" element={<SignUp />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
-      {user && <Footer/>}
+      {user && <Footer />}
     </div>
   );
 }
