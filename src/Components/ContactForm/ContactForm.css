@@ -1,0 +1,47 @@
+.ContactSection {
+  height: fit-content;
+  min-width: 260px;
+}
+.ContactForm {
+  height: 100%;
+  padding: 0px;
+  width: 100%;
+  margin-top: 0px;
+}
+.ContactForm fieldset {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.ContactForm fieldset p {
+  display: flex;
+  align-items: self-start;
+  flex-direction: column;
+  gap: 5px;
+}
+.ContactForm fieldset p input {
+  width: 200px;
+  height: 25px;
+  padding-left: 0.6rem;
+  outline: none;
+  border: none;
+}
+
+.ContactForm fieldset p select {
+  border-radius: 4px;
+  outline: none;
+  transition: 400ms ease-in-out;
+  border: none;
+}
+.ContactForm fieldset p option {
+  border: none;
+}
+.ContactSection button {
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.542);
+  padding: 6px 0;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: var (--subHeader-font);
+}

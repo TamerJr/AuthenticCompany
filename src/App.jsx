@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import {
   Account,
@@ -10,13 +10,14 @@ import {
   Terms,
   AboutUs,
   Navbar,
+  Footer,
 } from "./Utilities/Utilities";
 import "./App.css";
 import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
+import userContext from "./Contexts/AuthContext";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+const {user}=useContext(userContext)
   return (
     <div className="App">
       <Navbar />
@@ -44,6 +45,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
+      {user && <Footer/>}
     </div>
   );
 }

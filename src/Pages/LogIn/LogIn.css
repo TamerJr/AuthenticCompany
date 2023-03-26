@@ -57,7 +57,7 @@ form{
     font-weight: bold;
     border-radius: 5px;
     transition: 400ms ease-in-out;
-    box-shadow: 5px 5px 17px 1px black;
+    box-shadow: 0px 0px 5px 0px black;
     font-size: 15px;
 }
 .SignInForm button:hover{
