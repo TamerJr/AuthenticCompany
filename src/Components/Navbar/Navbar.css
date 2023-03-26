@@ -1,0 +1,114 @@
+/* Navigation Menu */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+.navigationList {
+  list-style: none;
+  display: flex;
+  max-width:100%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.navigationList *{
+
+    text-decoration: none;
+    color: aliceblue;
+} 
+.navigationList li {
+  margin: 0 3rem;
+  font-size: var(--subHeader-font);
+}
+/* End Of Navigation Menu */
+
+ /* Auth Menu  */
+.AuthMenu {
+  list-style: none;
+  padding: 0;
+}
+.AuthMenu li {
+  margin: 1rem 0;
+}
+.AuthMenu li .LogOut {
+  background-color: rgba(198, 23, 23, 0.786);
+  border: 1px solid rgba(255, 255, 255, 0.353);
+  border-radius: 15px;
+  padding: 10px 1rem;
+}
+.AuthMenu li .LogIn {
+  background-color: rgba(22, 199, 22, 0.126);
+  border: 1px solid rgba(255, 255, 255, 0.353);
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: (--subHeader-font);
+  padding: 10px 1rem;
+  color: white;
+}
+.AuthMenu li .SignUp {
+  background-color: rgba(12, 83, 189, 0.751);
+  border: 1px solid rgba(255, 255, 255, 0.353);
+  border-radius: 15px;
+  padding: 10px 1rem;
+}
+/* End of Auth Menu */
+
+ /* Toogle Menu */
+.ToggleMenu {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50px;
+    min-height: 200px;
+    max-height: -moz-fit-content;
+    animation: ToggleMenuAnimate ease-in-out 1s;
+    background-color: #ffffff46;
+    border-radius: var(--border-radius);
+  }
+.navigationMenuMob{
+    display: none;
+
+}
+@keyframes ToggleMenuAnimatie {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* End Of Toggle */
+
+/* Menu Toggler */
+.MenuToggler{
+  transition: 400ms ease-in-out;
+  cursor: pointer;
+}
+.MenuToggler:hover{
+  rotate: 90deg;
+}
+
+/* End Menu Toggler */
+
+/* Mob Screen  */
+@media only screen and (max-width :700px) {
+    .navigationList{
+        display: none;
+    }
+    .navigationMenuMob{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        flex-flow: column;
+    }
+}

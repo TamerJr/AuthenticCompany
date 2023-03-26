@@ -1,0 +1,22 @@
+.Count{
+    width :60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.643);
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+}
+.CountUp{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+}
+@media only screen and (max-width:500px){
+    .CountUp{
+        flex-flow:column;
+    }
+}

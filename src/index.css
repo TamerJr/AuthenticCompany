@@ -4,7 +4,7 @@
   --hovered-text-Color: #57c5b6;
   --border-radius: 15px;
   --headers-font: 24px;
-  --subHeader-font: 16px;
+  --subHeader-font: 18px;
   --normal-text: 14px;
   --font-family: "Josefin Sans", sans-serif;
   --text-Color: #fff;
@@ -15,9 +15,16 @@ body{
   padding: 0;
   background-color: var(--backGround-Color);
   color: var(--text-Color);
+  font-family: var(--font-family);
+  text-decoration: none;
+  width: 100%;
+}
+button{
+  cursor: pointer;
 }
 .App{
   margin: 0px 1rem;
+  max-width: 100%;
 }
 img {
   max-width: 100%;
