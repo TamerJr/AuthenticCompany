@@ -1,0 +1,12 @@
+.prodcutsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.PagesButton{
+    width: 40px ;
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    margin: 1rem;
+    border-radius: var(--border-radius);
+}

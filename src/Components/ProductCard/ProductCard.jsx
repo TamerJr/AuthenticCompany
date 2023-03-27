@@ -1,26 +1,41 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ProductCard.css";
-const ProductCard = () => {
+const ProductCard = ({
+  img,
+  title,
+  duration,
+  status,
+  roundNumber,
+  discription,
+  id,
+}) => {
   return (
     <article className="ProductCard">
       <figure>
-        <img
-          src="https://th.bing.com/th/id/OIP.yyyPkS6L1Vs0KxS0SqHgNgHaE8?w=272&h=181&c=7&r=0&o=5&pid=1.7"
-          alt=""
-          title=""
-        />
-        <figcaption>Time Management Course</figcaption>
+        <img src={img} alt={title} title={title} />
+        <figcaption>{title}</figcaption>
       </figure>
       <section className="CourseDetails">
         <h3>
-          status : <span>Coming soon</span>
+          status :
+          {status == "Coming Soon" ? (
+            <span className="CoomingSoon">Coming soon</span>
+          ) : (
+            <span className="Available">Open</span>
+          )}
         </h3>
         <h3>
-          Round  : <span> 15</span>
+          Round : <span className="roundNumber"> {roundNumber}</span>
         </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eveniet?</p>
+        <h3>
+          Duration : <span className="duration"> {duration}</span>
+        </h3>
+        <p>{discription}</p>
         <div className="buttonContainer">
-          <button>More Details</button>
+          <Link to={`productdetails/${id}`}>
+            <button>More Details</button>
+          </Link>
         </div>
       </section>
     </article>
