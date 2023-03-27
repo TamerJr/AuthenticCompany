@@ -1,0 +1,32 @@
+.MoreAboutUs {
+  background-color: #fff;
+  border: none;
+  width: 100px;
+  height: 30px;
+  font-size: var(--subHeader-font);
+}
+.AboutUsSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.DiscriptionBreif p{
+  font-size: var(--subHeader-font);
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+h1{
+  text-align: center;
+}
+@media only screen and (max-width :500px){
+  .AboutUsSection{
+    flex-wrap: wrap;
+  }
+  .DiscriptionBreif p{
+    font-size: var(--normal-text);
+  }
+  h1{
+    font-size: var(--headers-font);
+  }
+}
