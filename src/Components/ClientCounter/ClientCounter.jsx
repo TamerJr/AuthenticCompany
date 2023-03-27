@@ -1,14 +1,20 @@
 import React from "react";
 import CountUp from "react-countup";
-import "./ClientCounter.css"
+import "./ClientCounter.css";
 const ClientCounter = () => {
   return (
     <section className="CountUp">
-      <div className="Count">
-        <CountUp end={1800} duration={6} />
+      <div className="CounterDetails">
+        <h1>Session Count</h1>
+        <div className="Count">
+          <CountUp end={1800} duration={6} />
+        </div>
       </div>
-      <div className="Count">
-        <CountUp end={739} duration={3} />
+      <div className="CounterDetails">
+        <h1>Clients</h1>
+        <div className="Count">
+          <CountUp end={739} duration={3} />
+        </div>
       </div>
     </section>
   );

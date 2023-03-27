@@ -1,19 +1,32 @@
 .Count{
-    width :60px;
-    height: 60px;
+    width :100px;
+    height: 100px;
     border: 1px solid rgba(255, 255, 255, 0.643);
     border-radius: 50%;
     text-align: center;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     display: flex;
+    flex-wrap: wrap;
 }
+.CounterDetails{
+    display: flex;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.CounterDetails *{
+    font-size: var(--headers-font);
+}
+
 .CountUp{
     width:100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row;
+    gap: 2rem;
 }
 @media only screen and (max-width:500px){
     .CountUp{
