@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import { ProductCard } from "../../Utilities/Utilities";
 const Shop = () => {
   return (
-    <div>Shop</div>
-  )
-}
+    <section>
+      <ProductCard />
+    </section>
+  );
+};
 
-export default Shop
+export default Shop;

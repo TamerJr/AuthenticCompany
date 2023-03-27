@@ -7,7 +7,7 @@ export {default as ProductCard } from "../Components/ProductCard/ProductCard"
 export {default as TermsSection } from "../Components/TermsSection/TermsSection"
 export {default as ValueSection } from "../Components/ValueSection/ValueSection"
 export {default as ContactForm } from "../Components/ContactForm/ContactForm"
-
+export {default as AboutSection} from "../Components/AboutSection/AboutSection"
 // Pages
 export {default as AboutUs } from "../Pages/AboutUs/AboutUs"
 export {default as Home } from "../Pages/Home/Home"

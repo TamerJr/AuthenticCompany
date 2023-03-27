@@ -10,6 +10,9 @@
   --text-Color: #fff;
   --transtion-time: 400ms ease-in-out;
 }
+*{
+  text-decoration: none;
+}
 body{
   margin: 0;
   padding: 0;
@@ -23,6 +26,7 @@ button{
   cursor: pointer;
 }
 .App{
+
   margin: 0px 1rem;
   max-width: 100%;
 }

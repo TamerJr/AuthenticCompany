@@ -3,6 +3,10 @@ import CountUp from "react-countup";
 import "./ClientCounter.css";
 const ClientCounter = () => {
   return (
+    <>
+    <h1>
+      Our Numbers
+    </h1>
     <section className="CountUp">
       <div className="CounterDetails">
         <h1>Session Count</h1>
@@ -17,6 +21,7 @@ const ClientCounter = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

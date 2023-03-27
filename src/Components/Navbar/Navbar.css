@@ -1,27 +1,33 @@
 /* Navigation Menu */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  position: relative;
+  /* position: relative; */
+  position: sticky;
+  top: 0;
+  left: 0;
   z-index: 10;
-  transform: 400ms;
+  transition: 400ms ease-in-out;
+}
+.sticky {
+  background-color: rgb(0, 0, 0);
+  height: 70px;
 }
 .navigationList {
   list-style: none;
   display: flex;
-  max-width:100%;
+  max-width: 100%;
   padding: 0;
   justify-content: center;
   align-items: center;
 }
-.navigationList *{
-
-    text-decoration: none;
-    color: aliceblue;
-} 
-.navigationList *:hover{
+.navigationList * {
+  text-decoration: none;
+  color: aliceblue;
+}
+.navigationList *:hover {
   color: var(--hovered-text-Color);
 }
 .navigationList li {
@@ -30,7 +36,7 @@ nav {
 }
 /* End Of Navigation Menu */
 
- /* Auth Menu  */
+/* Auth Menu  */
 .AuthMenu {
   list-style: none;
   padding: 0;
@@ -61,25 +67,25 @@ nav {
 }
 /* End of Auth Menu */
 
- /* Toogle Menu */
+/* Toogle Menu */
 .ToggleMenu {
-    width: 200px;
-    position: absolute;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 50px;
-    min-height: 200px;
-    max-height: -moz-fit-content;
-    animation: ToggleMenuAnimate ease-in-out 1s;
-    background-color: #ffffff46;
-    border-radius: var(--border-radius);
-  }
-.navigationMenuMob{
-    display: none;
-
+  width: 200px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50px;
+  box-shadow: 0px 0px 5px 0px #0000008a;
+  min-height: 200px;
+  max-height: -moz-fit-content;
+  animation: ToggleMenuAnimate ease-in-out 1s;
+  background-color: #00000098;
+  border-radius: var(--border-radius);
+}
+.navigationMenuMob {
+  display: none;
 }
 @keyframes ToggleMenuAnimatie {
   from {
@@ -93,26 +99,26 @@ nav {
 /* End Of Toggle */
 
 /* Menu Toggler */
-.MenuToggler{
+.MenuToggler {
   transition: 400ms ease-in-out;
   cursor: pointer;
 }
-.MenuToggler:hover{
+.MenuToggler:hover {
   rotate: 90deg;
 }
 
 /* End Menu Toggler */
 
 /* Mob Screen  */
-@media only screen and (max-width :700px) {
-    .navigationList{
-        display: none;
-    }
-    .navigationMenuMob{
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        align-items: center;
-        flex-flow: column;
-    }
+@media only screen and (max-width: 700px) {
+  .navigationList {
+    display: none;
+  }
+  .navigationMenuMob {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex-flow: column;
+  }
 }
