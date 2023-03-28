@@ -1,0 +1,46 @@
+.ProductDetails-Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    margin-top: 2rem;
+}
+.ProductDetails-Container figure{
+    width :40%;
+}
+img{
+    width :100%;
+    object-fit: cover;
+}
+.ProductDetails-Container .ComingSoon{
+    color: tomato;
+}
+.ProductDetails-Container .Open{
+    color: lime;
+}
+.CourseDescription{
+
+    max-width: 50%;
+}
+.CourseDescription .status{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.CourseDescription .status button {
+    text-align: center;
+    line-height: 1;
+    padding:  10px;
+    font-weight: 600;
+    color: aliceblue;
+    background-color: inherit;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: 400ms ease-in-out;
+}
+.CourseDescription .status button:hover{
+    color: var(--backGround-Color);
+    background-color: #fff;
+}
+.CourseDescription p{
+    line-height: 1.3;
+}

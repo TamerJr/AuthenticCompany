@@ -13,6 +13,11 @@
 *{
   text-decoration: none;
 }
+button{
+
+  font-family: var(--main-font);
+}
+
 body{
   margin: 0;
   padding: 0;
