@@ -18,7 +18,6 @@ const Navbar = () => {
   // change bgc when scroll
     window.addEventListener("scroll",()=>{
       let navbar=document.querySelector("nav");
-      console.log(window.screenY>0)
      navbar?.classList.toggle("sticky",window.scrollY>0)
     
      

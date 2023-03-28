@@ -1,12 +1,37 @@
-.prodcutsContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.prodcutsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.PagesButton{
-    width: 40px ;
-    border: 1px solid rgba(255, 255, 255, 0.41);
-    margin: 1rem;
-    border-radius: var(--border-radius);
+.producdrsContainerSection {
+  margin-bottom: 2rem;
+}
+.PagesButton {
+  width: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.41);
+  margin: 1rem;
+  border-radius: var(--border-radius);
+}
+.navigationContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.backButton{
+  rotate: 180deg;
+}
+.navigationContainer button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.206);
+  color: rgb(0, 0, 0);
+  font-size: var(--subHeader-font);
+  /* background-color: rgba(255, 127, 80, 0.334); */
 }

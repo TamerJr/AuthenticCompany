@@ -10,6 +10,7 @@ const ProductCard = ({
   discription,
   id,
 }) => {
+  console.log(id)
   return (
     <article className="ProductCard">
       <figure>
@@ -20,9 +21,9 @@ const ProductCard = ({
         <h3>
           status :
           {status == "Coming Soon" ? (
-            <span className="CoomingSoon">Coming soon</span>
+            <span className="ComingSoon"> Coming soon</span>
           ) : (
-            <span className="Available">Open</span>
+            <span className="Available"> Open</span>
           )}
         </h3>
         <h3>
