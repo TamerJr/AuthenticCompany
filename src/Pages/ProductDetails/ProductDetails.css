@@ -5,7 +5,7 @@
     margin-top: 2rem;
 }
 .ProductDetails-Container figure{
-    width :40%;
+    width :50%;
 }
 img{
     width :100%;
@@ -43,4 +43,31 @@ img{
 }
 .CourseDescription p{
     line-height: 1.3;
+}
+@media only screen and (max-width:1000px){
+    .ProductDetails-Container{
+        display: flex;
+        flex-flow: column-reverse;
+        width: 100%;
+        
+    }
+    .ProductDetails-Container figure{
+        width: 100%;
+        margin: 0;
+    }
+    .ProductDetails-Container .CourseDescription {
+        max-width:100%;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .status button{
+       margin-left: 1rem;
+    }
+    .status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

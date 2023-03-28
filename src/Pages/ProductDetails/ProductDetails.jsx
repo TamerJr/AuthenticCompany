@@ -12,7 +12,7 @@ const ProductDetails = () => {
         <h3>
           Duration : <span>{newData?.duration}</span>
         </h3>
-        <div>
+        <div >
           <h3>Status :</h3>
           {newData?.status == "Coming Soon" ? (
             <p className="ComingSoon status">

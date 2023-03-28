@@ -34,7 +34,7 @@ const ProductCard = ({
         </h3>
         <p>{discription?.substring(0,100)}...</p>
         <div className="buttonContainer">
-          <Link to={`productdetails/${id}`}>
+          <Link to={`/shop/productdetails/${id}`}>
             <button>More Details</button>
           </Link>
         </div>
