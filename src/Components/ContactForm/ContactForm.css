@@ -1,6 +1,6 @@
 .ContactSection {
   height: fit-content;
-  min-width: 260px;
+  width: 100%;
 }
 .ContactForm {
   height: 100%;
@@ -21,7 +21,7 @@
   gap: 5px;
 }
 .ContactForm fieldset p input {
-  width: 200px;
+  width: 90%;
   height: 25px;
   padding-left: 0.6rem;
   outline: none;

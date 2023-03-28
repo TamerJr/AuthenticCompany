@@ -14,7 +14,9 @@ const Footer = () => {
     <section className="Footer">
       <section className="Footer-Parts">
         <div className="Footer-Components">
-          <ContactForm />
+          <div className="ContactForm-Container">
+          <ContactForm  />
+            </div>
           <div className="ListsContainer">
             <div className="InfoContainer">
               <h4>Infos </h4>
