@@ -1,9 +1,15 @@
-import React from "react";
+import React ,{useContext} from "react";
 import { useParams } from "react-router-dom";
+import dbContext from "../../Contexts/DBContext";
 import data from "../../DataSource";
+
 import "./ProductDetails.css";
 const ProductDetails = () => {
   const { id } = useParams();
+  const {dataList,addData,deleteEle}=useContext(dbContext)
+  const alreadyExist=dataList.filter(ele=>
+    ele.title=== data[id].title) 
+    console.log(alreadyExist[0])
   let newData = data[id];
   return (
     <section className="ProductDetails-Container">
@@ -22,7 +28,7 @@ const ProductDetails = () => {
           ) : (
             <p className="Open status">
               {newData?.status}
-              <button>BUY NOW</button>
+              <button onClick={()=>addData(newData)} disabled={alreadyExist[0] != undefined } >{alreadyExist[0] != undefined ? "Already have":"BUY NOW " }</button>
             </p>
           )}
         </div>

@@ -4,10 +4,11 @@ import {
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
+import {doc,setDoc} from "firebase/firestore"
 import React, { useState, useEffect } from "react";
 import { createContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { auth } from "../firebaseConfig";
+import { auth, db } from "../firebaseConfig";
 const userContext = createContext();
 export const UserContextProvider = ({ children }) => {
   const navigate = useNavigate();
@@ -17,6 +18,9 @@ export const UserContextProvider = ({ children }) => {
   const signUp = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
+      setDoc(doc(db,"Courses",email),{
+        userList:[]
+      })
       navigate("/account");
     } catch (err) {
       alert(err.message);

@@ -12,6 +12,7 @@ const Footer = () => {
 
   return (
     <section className="Footer">
+      <h1>Contact Us</h1>
       <section className="Footer-Parts">
         <div className="Footer-Components">
           <div className="ContactForm-Container">

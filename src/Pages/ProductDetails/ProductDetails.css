@@ -4,22 +4,24 @@
     align-items: self-start;
     margin-top: 2rem;
 }
+.CourseDescription{
+    height: 500px;
+    max-width: 50%;
+}
 .ProductDetails-Container figure{
     width :50%;
+    height: 400px;
 }
 img{
     width :100%;
     object-fit: cover;
+    height: 100%;
 }
 .ProductDetails-Container .ComingSoon{
     color: tomato;
 }
 .ProductDetails-Container .Open{
     color: lime;
-}
-.CourseDescription{
-
-    max-width: 50%;
 }
 .CourseDescription .status{
     width: 100%;
@@ -54,11 +56,13 @@ img{
     .ProductDetails-Container figure{
         width: 100%;
         margin: 0;
+        
     }
     .ProductDetails-Container .CourseDescription {
         max-width:100%;
         display: flex;
         flex-flow: column;
+        height: fit-content;
         align-items: flex-start;
         justify-content: center;
     }

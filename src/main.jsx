@@ -4,12 +4,15 @@ import { BrowserRouter } from "react-router-dom";
 import { UserContextProvider } from "./Contexts/AuthContext";
 import App from "./App";
 import "./index.css";
-
+import { DBContextProvider } from "./Contexts/DBContext";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <UserContextProvider>
-        <App />
+        <DBContextProvider>
+
+         <App />
+        </DBContextProvider>
       </UserContextProvider>
     </BrowserRouter>
   </React.StrictMode>
