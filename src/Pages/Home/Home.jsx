@@ -15,10 +15,14 @@ const Home = () => {
   return (
     <div className="HomePage">
       <ValueSection />
+
       <div className="CoursesBrief">
-        {landingPageData.map((ele, indx) => (
-          <ProductCard {...ele} id={indx} key={indx} />
-        ))}
+        <h1>Resent Courses</h1>
+        <div className="CourseBriefContainer">
+          {landingPageData.map((ele, indx) => (
+            <ProductCard {...ele} id={indx} key={indx} />
+          ))}
+        </div>
       </div>
       <AboutSection />
       <ClientCounter />
