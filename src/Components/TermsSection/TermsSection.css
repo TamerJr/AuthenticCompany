@@ -1,0 +1,36 @@
+.TermsSection {
+    margin: 2rem auto;
+  width: 90%;
+  /* margin: auto; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+.SectionController {
+  background-color: rgba(0, 0, 0, 0.649);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.326);
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: 600ms ease-in-out;
+}
+.SectionTogglerUp {
+  rotate: 90deg;
+}
+.SectionTogglerDown {
+  rotate: 270deg;
+}
+.TermsSectionText {
+  margin: 0;
+  padding: 2rem;
+  transition: 1000ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.446);
+  line-height: 1.5;
+}
+
+.TermsSectionDiscriptionOff {
+  display: none;
+}
+.TermsSectionDiscriptionOn {
+  display: block;
+}
