@@ -30,10 +30,10 @@ export const DBContextProvider = ({children}) => {
         }
     }
     //remove data using updateDoc
-    const deleteEle= async (indx)=>{
+    const deleteEle= async (title)=>{
         try{
-            let newData= dataList?.filter((ele,index)=>
-            indx !=index
+            let newData= dataList?.filter((ele)=>
+            title !=ele.title
             )
             await updateDoc(dbCollection,{
                 userList:newData

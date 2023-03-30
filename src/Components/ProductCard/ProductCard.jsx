@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CiCircleRemove } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import dbContext from "../../Contexts/DBContext";
 import "./ProductCard.css";
 const ProductCard = ({
   img,
@@ -9,11 +11,16 @@ const ProductCard = ({
   roundNumber,
   discription,
   id,
+  deleter
 }) => {
-  console.log(id)
+
+  const {deleteEle} =useContext(dbContext)
+
   return (
     <article className="ProductCard">
       <figure>
+      {deleter && <button className='Delete' onClick={()=>deleteEle(title)}><CiCircleRemove size={25}/></button>}
+
         <img src={img} alt={title} title={title} />
         <figcaption>{title}</figcaption>
       </figure>

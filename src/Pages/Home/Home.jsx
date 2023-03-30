@@ -10,7 +10,6 @@ import {
 import "./Home.css";
 const Home = () => {
   const { user } = useContext(userContext);
-  console.log(user);
   const landingPageData = data.slice(0, 3);
   return (
     <div className="HomePage">
