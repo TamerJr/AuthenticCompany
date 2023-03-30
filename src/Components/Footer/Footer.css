@@ -1,12 +1,14 @@
 .Footer {
-  max-width: 100%;
+ width: 100%;
 
   /* display: flex;
     justify-content: space-around;
     align-items: center; */
+    position: sticky;
+    top :100%;
 }
 .Footer-Parts {
-  width: 100%;
+  max-width: 100%;
 }
 .ListsContainer{
     display: flex;

@@ -38,12 +38,12 @@ export const UserContextProvider = ({ children }) => {
   };
   useEffect(() => {
     const userIn = () => {
-      onAuthStateChanged(auth, (user) => {
-        setUser(user);
+      onAuthStateChanged(auth, (currentUser) => {
+        setUser(currentUser);
       });
     };
-    return () => userIn();
-  }, []);
+     return  userIn();
+  });
   const LogOut = () => {
     try {
       signOut(auth);
@@ -55,7 +55,7 @@ export const UserContextProvider = ({ children }) => {
 
   return (
     <userContext.Provider
-      value={{ user, logIn, signUp, LogOut, setEmail, setPassword, user }}
+      value={{ user, logIn, signUp, LogOut, setEmail, setPassword }}
     >
       {children}
     </userContext.Provider>

@@ -26,14 +26,17 @@ body{
   font-family: var(--font-family);
   text-decoration: none;
   width: 100%;
+  /* overflow: hidden; */
 }
 button{
   cursor: pointer;
 }
 .App{
+  min-height: 100vh;
 
   margin: 0px 1rem;
   max-width: 100%;
+ 
 }
 img {
   max-width: 100%;

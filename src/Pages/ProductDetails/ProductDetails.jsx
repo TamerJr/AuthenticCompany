@@ -21,9 +21,8 @@ const ProductDetails = () => {
           {newData?.status == "Coming Soon" ? (
             <p className="ComingSoon status">
               {newData?.status}
-              <button onClick={() => addData(newData)}>
-                NONTIFY WHEN OPEN
-              </button>
+              <button onClick={() => addData(newData)} disabled={alreadyExist[0] != undefined}>
+              {alreadyExist[0] != undefined ? "Following" : "Follow to know"}              </button>
             </p>
           ) : (
             <p className="Open status">

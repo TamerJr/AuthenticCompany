@@ -9,6 +9,10 @@
   border: none;
   
 }
+.AboutUsImg {
+  height: 100%;
+  width: 500px;
+}
 .MoreAboutUs *{
   color: rgb(0, 0, 0);
 }

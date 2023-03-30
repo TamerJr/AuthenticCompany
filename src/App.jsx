@@ -19,8 +19,9 @@ import ProtectLogIn from "./Components/ProtectLogIn/ProtectLogIn";
 
 function App() {
   const { user } = useContext(userContext);
+  console.log(user)
   return (
-    <div className="App">
+    <div className="App" id="#">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
