@@ -1,9 +1,16 @@
 .MoreAboutUs {
-  background-color: #fff;
+  background-color: #ffffffb4;
   border: none;
   width: 100px;
   height: 30px;
+  border-radius: 5px;
   font-size: var(--subHeader-font);
+  font-weight: bold;
+  border: none;
+  
+}
+.MoreAboutUs *{
+  color: rgb(0, 0, 0);
 }
 .AboutUsSection {
   display: flex;
